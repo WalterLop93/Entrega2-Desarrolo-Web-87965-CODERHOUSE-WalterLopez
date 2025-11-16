@@ -96,6 +96,24 @@ h1{
     border-radius: 20px;
 }
 
+.recuadro-container{
+    background-color: #c299ad;
+    padding: 80px 30px 50px;
+    border-radius: 50px;
+}
+.titulo-cardindex{
+    color: rgb(255, 255, 255);
+    margin: 15px 0px;
+}
+.card-index h3{
+    color: rgb(140,50,90);
+}
+
+
+
+
+
+
 /*index imagen de mesa duce*/
 .mesadulce {
     position: relative;
@@ -248,7 +266,12 @@ details ul {
 
 
 
-
+.iconoscompra{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
 .grid-compra {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -351,10 +374,13 @@ details ul {
     }
 
     .grid-compra {
+        grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr;
 }
-.produc-mesadulce img {
-    height: 400px;
+
+
+    .produc-mesadulce img {
+        height: 400px;
 }
 
     .piedepag .col-md-6{
