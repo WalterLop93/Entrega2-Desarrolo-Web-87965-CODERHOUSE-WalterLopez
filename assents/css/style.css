@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 5px;
+    background-color: rgb(223, 159, 183);
+}
+header img{
+    border-radius: 20px;
+}
+header a:hover{
+    background-color: #fff;
+    color: rgb(59, 32, 50);
+    border-radius: 10px;
+}
+
+
+.enunciado{
+    margin-top: 50px;
+}
+.grid-enunciados{
+    background-color: #f1c3da;
+    border-radius: 50px;
+}
+.grid-enunciados {
+    display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 1.5rem; /* separación entre columnas */
+    justify-content: center;
+    padding: 20px;
+}
+.enun > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.enun div img {
+    width: 40px;
+}
+
+.whatsap-enun {
+    display: flex;
+    justify-content: center;
+}
+.whatsap-enun a img{
+    background-color: #fff;
+    margin: -50px;
+    border-radius: 20px;
+}
+
+.mesadulce {
+    position: relative;
+    margin: 120px 0px;
+    height: 450px;
+    background-image: url(../img/imagenes/index/mesadulce.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;      
+    justify-content: flex-start;
+    padding-left: 60px;       
+    border-radius: 10px;      
+}
+.mesadulce .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    border-radius: 10px; 
+    z-index: 1;
+}
+/* Texto arriba de la capa */
+.texto-mesad {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+/* Estilo del texto */
+.texto-mesad h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.texto-mesad h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+}
+
+
+
+
+footer{
+    background-color: rgb(184, 112, 160);
+}
+.piedepag{
+    color: rgb(59, 32, 50);
+}
+
+.foot {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+}
+
+.foot ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.foot li {
+    margin-bottom: 4px;
+}
+.foot h3{
+    color: black;
+}
+
+.foot a {
+    color: rgb(59, 32, 50);
+    text-decoration: none;
+    gap: 30px;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+.redes{
+    align-self: flex-end;
+}
+
+
+
+
+
+
+.historia{
+    margin: 20px 0px;
+    gap: 20px;
+    align-items: center;
+}
+.accordion-button {
+    background-color: #bd95b6;   
+    color: white;                
+}
+.img-historia{
+    margin: 20px 0px;
+}
+
+
+
+.produc-mesadulce {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-auto-rows: auto;                  /* 5 filas automáticas */
+    gap: 20px;                             /* separaciones entre cards */
+    margin-top: 20px;
+}
+.produc-mesadulce img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* recorta un poco pero mantiene proporción linda */
+}
+details summary {
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+details[open] summary {
+    margin-bottom: 12px;
+}
+details ul {
+    margin-left: 20px;
+}
+
+
+
+.grid-compra {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;                          
+    margin: 20px 0px;
+    align-items: stretch;
+}
+
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    margin: 50px 0px 30px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-enunciados {
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+
+    .redes{
+    align-self: flex-start;
+}
+    .produc-mesadulce {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-compra {
+        grid-template-columns: 1fr; 
+}
+
+.galeria {
+    grid-template-columns: 1fr;
+}
+
+}
