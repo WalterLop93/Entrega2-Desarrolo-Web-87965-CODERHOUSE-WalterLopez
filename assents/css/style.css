@@ -38,6 +38,16 @@ header{
     border-radius: 10px;
 }
 
+.navbar-custom .navbar-toggler {
+    border-color: rgb(190,100,140);
+}
+.navbar-toggler-icon {
+    background-image: url(../img/imagenes/header/icons8-menú-50.png) !important;
+}
+
+
+
+
 /*h1*/
 h1{
     background-color: rgb(245,220,230);
@@ -274,6 +284,27 @@ details ul {
     z-index: 10;
 }
 
+.ubicacion {
+    background-color: rgb(245,220,230);
+    margin: 20px 0px;
+    align-content: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.ubicacion h3 {
+    color:rgb(208,128,156) ;
+}
+.maps iframe,
+.map-iframe {
+    width: 100%;
+    align-items: center;
+    border: 3px solid rgb(223,159,183);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+
 
 
 
@@ -305,12 +336,12 @@ details ul {
         grid-template-columns: 1fr;
     }
 
-    .img-historia img{
-    gap: 20px;
+    .img-historia .col-lg-4{
+        margin-bottom: 20px;
 }
 
     .redes{
-    align-self: flex-start;
+        align-self: flex-start;
 }
 
     .produc-mesadulce {
@@ -318,11 +349,15 @@ details ul {
     }
 
     .grid-compra {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
 }
 
-.galeria {
-    grid-template-columns: 1fr;
+    .piedepag .col-md-6{
+        margin-bottom: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
 }
 
 }
