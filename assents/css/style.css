@@ -81,6 +81,10 @@ h1{
 }
 .enun div img {
     width: 40px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 12px;
 }
 .whatsap-enun {
     display: flex;
@@ -280,8 +284,6 @@ details ul {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    z-index: 10;
 }
 
 .ubicacion {
@@ -350,6 +352,9 @@ details ul {
 
     .grid-compra {
         grid-template-columns: 1fr;
+}
+.produc-mesadulce img {
+    height: 400px;
 }
 
     .piedepag .col-md-6{
