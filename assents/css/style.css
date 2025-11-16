@@ -4,21 +4,49 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* PALETA BASADA EN rgb(223,159,183)
+Base:        #DF9FB7 (rgb(223,159,183))
+Fuerte:      #BE648C (rgb(190,100,140))   -> Navbar
+Intermedio:  #D0809C (rgb(208,128,156))
+Hover:       #A0466E (rgb(160,70,110))
+Acento:      #8C325A (rgb(140,50,90))
+Claro:       #F5DCE6 (rgb(245,220,230))
+*/
 
+
+/*encabezado*/
 header{
-    margin-bottom: 5px;
-    background-color: rgb(223, 159, 183);
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
 }
-header img{
-    border-radius: 20px;
+.linea{
+    background-color:rgb(190, 100, 140);
+    display: flex;
+    flex-direction: row;
+    height: 5px;
+    color: #fff;
 }
-header a:hover{
-    background-color: #fff;
-    color: rgb(59, 32, 50);
+.navbar-nav a {
+    color:rgb(190, 142, 160) !important ;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 600;
+}
+.navbar-nav a:hover{
+    background-color: rgb(208,128,156);
+    color: rgb(255, 255, 255) !important;
     border-radius: 10px;
 }
 
+/*h1*/
+h1{
+    background-color: rgb(245,220,230);
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(190,100,140);
+}
 
+/*index enunciados*/
 .enunciado{
     margin-top: 50px;
 }
@@ -29,8 +57,8 @@ header a:hover{
 .grid-enunciados {
     display: grid;
     grid-template-rows: 250px;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 1.5rem; /* separación entre columnas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     justify-content: center;
     padding: 20px;
 }
@@ -44,7 +72,6 @@ header a:hover{
 .enun div img {
     width: 40px;
 }
-
 .whatsap-enun {
     display: flex;
     justify-content: center;
@@ -55,6 +82,7 @@ header a:hover{
     border-radius: 20px;
 }
 
+/*index imagen de mesa duce*/
 .mesadulce {
     position: relative;
     margin: 120px 0px;
@@ -99,14 +127,13 @@ header a:hover{
 
 
 
-
+/* pie de pagina */
 footer{
-    background-color: rgb(184, 112, 160);
+    background-color: rgb(190,100,140);
 }
 .piedepag{
-    color: rgb(59, 32, 50);
+    color: rgb(255, 255, 255);
 }
-
 .foot {
     text-align: left;
     display: flex;
@@ -114,67 +141,77 @@ footer{
     align-items: flex-start;
     align-self: center;
 }
-
 .foot ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .foot li {
     margin-bottom: 4px;
 }
 .foot h3{
-    color: black;
+    color: rgb(255, 255, 255);
 }
-
 .foot a {
-    color: rgb(59, 32, 50);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     gap: 30px;
 }
-
 .foot a:hover {
     text-decoration: underline;
-    background-color: aliceblue;
-    border-radius: 3px;
+    color: rgb(100, 32, 100);
 }
-
 .redes{
+    border-radius: 20px;
     align-self: flex-end;
 }
+.redes img{
+    background-color: #fff;
+    border-radius: 5px;
+}
 
 
 
-
-
-
+/* quienes somos */
 .historia{
-    margin: 20px 0px;
     gap: 20px;
     align-items: center;
 }
 .accordion-button {
-    background-color: #bd95b6;   
-    color: white;                
+    background-color: rgb(223,159,183); 
+    color: #fff;                        
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgb(190,100,140); 
+    color: #fff;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+.accordion-body {
+    background-color: rgb(245,220,230);
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
 }
 .img-historia{
     margin: 20px 0px;
 }
 
 
-
+/* producto */
 .produc-mesadulce {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    grid-auto-rows: auto;                  /* 5 filas automáticas */
-    gap: 20px;                             /* separaciones entre cards */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;               
+    gap: 20px;
     margin-top: 20px;
 }
 .produc-mesadulce img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* recorta un poco pero mantiene proporción linda */
+    object-fit: cover;
 }
 details summary {
     cursor: pointer;
@@ -187,6 +224,14 @@ details[open] summary {
 details ul {
     margin-left: 20px;
 }
+/* estilo de card */
+.card {
+    background-color: rgb(245,220,230); 
+    border: 1px solid rgb(223,159,183);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
 
 
 
@@ -194,10 +239,42 @@ details ul {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 40px;                          
+    gap: 30px;                          
     margin: 20px 0px;
     align-items: stretch;
 }
+/* CARD contenedora */
+.card-ccomprar {
+    position: relative;
+    padding-top: 45px;
+    border: 3px solid rgb(223,159,183);
+    border-radius: 12px;
+}
+.card-ccomprar .card-body{
+    padding: 15px;
+}
+.card-ccomprar .numero {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: rgb(190,100,140);
+    color: #fff;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+
 
 
 
@@ -207,7 +284,6 @@ details ul {
     gap: 30px; 
     margin: 50px 0px 30px;
 }
-
 .galeria img {
     width: 100%;
     height: 100%;
@@ -215,15 +291,28 @@ details ul {
     border-radius: 10px;
 }
 
+
+
+
+
 @media (max-width: 768px) {
-    .grid-enunciados {
-        grid-template-columns: 1fr;
-        align-content: center;
+    .navbar-brand {
+        width: 10px;
     }
+
+    .grid-enunciados {
+        grid-template-rows: none;
+        grid-template-columns: 1fr;
+    }
+
+    .img-historia img{
+    gap: 20px;
+}
 
     .redes{
     align-self: flex-start;
 }
+
     .produc-mesadulce {
         grid-template-columns: 1fr;
     }
