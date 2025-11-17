@@ -421,7 +421,9 @@ details ul {
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: 1fr;
 }
-
+details summary{
+    width: 80%;
+}
 
     .produc-mesadulce img {
         height: 400px;
