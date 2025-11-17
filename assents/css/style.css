@@ -47,6 +47,29 @@ header{
 
 
 
+/*carrusel*/
+.carousel-btn {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.btn-productos {
+    background-color: rgb(190,100,140);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: 500;
+}
+.btn-productos:hover {
+    background-color: rgb(223,159,183);
+    color: #fff;
+}
+
 
 /*h1*/
 h1{
@@ -97,13 +120,14 @@ h1{
 }
 
 .recuadro-container{
-    background-color: #c299ad;
-    padding: 80px 30px 50px;
+    background-color: #f8f1f5;
+    border: 3px solid rgb(140,50,90);
+    padding: 50px 30px 50px;
     border-radius: 50px;
 }
 .titulo-cardindex{
-    color: rgb(255, 255, 255);
-    margin: 15px 0px;
+    color: rgb(140,50,90);
+    margin-bottom: 50px;
 }
 .card-index h3{
     color: rgb(140,50,90);
@@ -111,13 +135,10 @@ h1{
 
 
 
-
-
-
 /*index imagen de mesa duce*/
 .mesadulce {
     position: relative;
-    margin: 120px 0px;
+    margin: 80px 0px;
     height: 450px;
     background-image: url(../img/imagenes/index/mesadulce.jpg);
     background-size: cover;
@@ -368,6 +389,9 @@ details ul {
     .redes{
         align-self: flex-start;
 }
+    .card-index .card{
+        margin-top: 15px;
+    }
 
     .produc-mesadulce {
         grid-template-columns: 1fr;
