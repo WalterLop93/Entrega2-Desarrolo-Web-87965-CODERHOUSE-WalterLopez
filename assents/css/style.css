@@ -28,6 +28,10 @@ body .h1-pages {
   border-radius: 12px;
   overflow: hidden;
 }
+.card-base .img, .card .img {
+  height: 100%;
+  object-fit: cover;
+}
 .card-base .card-title, .card .card-title {
   color: rgb(190, 100, 140);
 }
@@ -149,6 +153,8 @@ header {
 
 /* h1 index*/
 .titleindex {
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   color: rgb(190, 100, 140);
   opacity: 0;

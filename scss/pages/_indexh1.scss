@@ -3,6 +3,8 @@
 
 /* h1 index*/
 .titleindex{
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     color: map.get(mapa.$colores, fuerte);
     opacity: 0;

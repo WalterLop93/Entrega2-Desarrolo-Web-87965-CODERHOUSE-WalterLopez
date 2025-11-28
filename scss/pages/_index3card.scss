@@ -17,9 +17,6 @@
 
 .card{
     @extend .card-base;
-}
-
-.card {
     transition: transform .35s ease, box-shadow .35s ease;
 }
 
