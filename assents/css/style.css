@@ -629,16 +629,13 @@ footer a:hover {
     margin-bottom: 20px;
   }
   .iconos-compra img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
     width: 80px;
     animation: growMobile 3.5s ease-in-out infinite;
-  }
-  @keyframes growMobile {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
   }
   .redes {
     align-self: flex-start;
