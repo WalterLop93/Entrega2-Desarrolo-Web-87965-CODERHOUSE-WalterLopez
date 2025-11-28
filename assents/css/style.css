@@ -471,7 +471,7 @@ header {
   grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: 20px 0;
+  margin: 40px 0;
   align-items: stretch;
 }
 
@@ -627,6 +627,18 @@ footer a:hover {
   }
   .img-historia .col-lg-4 {
     margin-bottom: 20px;
+  }
+  .iconos-compra img {
+    width: 80px;
+    animation: growMobile 3.5s ease-in-out infinite;
+  }
+  @keyframes growMobile {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
   }
   .redes {
     align-self: flex-start;

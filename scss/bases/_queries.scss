@@ -51,6 +51,16 @@
         margin-bottom: 20px;
 }
 
+
+    .iconos-compra img {
+        width: 80px;                  // más chico en mobile
+        animation: growMobile 3.5s ease-in-out infinite;
+    }
+@keyframes growMobile {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.05); } // más suave que desktop
+}
+
     .redes{
         align-self: flex-start;
 }
