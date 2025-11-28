@@ -54,7 +54,7 @@
 
     .iconos-compra img {
         @include mixin.flex(row,center,center);
-        width: 100px;          
+        width: 80px;          
         animation: movil 3.5s ease-in-out infinite;
     }
     @keyframes movil {
