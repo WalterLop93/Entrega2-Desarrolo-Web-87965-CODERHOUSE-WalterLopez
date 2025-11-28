@@ -54,13 +54,13 @@
 
     .iconos-compra img {
         @include mixin.flex(row,center,center);
-        width: 60%;             
-        animation: growMobile 3.5s ease-in-out infinite;
+        width: 100px;          
+        animation: movil 3.5s ease-in-out infinite;
     }
-    @keyframes growMobile {
+    @keyframes movil {
     0%, 100% { transform: scale(1); }
-    50%      { transform: scale(1.05); } 
-}
+    50%      { transform: scale(1.1); } 
+    }
 
     .redes{
         align-self: flex-start;

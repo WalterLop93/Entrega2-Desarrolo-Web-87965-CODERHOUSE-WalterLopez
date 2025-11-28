@@ -634,15 +634,15 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     gap: 0;
-    width: 60%;
-    animation: growMobile 3.5s ease-in-out infinite;
+    width: 100px;
+    animation: movil 3.5s ease-in-out infinite;
   }
-  @keyframes growMobile {
+  @keyframes movil {
     0%, 100% {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
   }
   .redes {
