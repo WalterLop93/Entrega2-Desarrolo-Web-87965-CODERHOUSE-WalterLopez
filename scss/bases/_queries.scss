@@ -36,6 +36,16 @@
         }
     }
 
+    .card-producto {
+        height: auto;
+        .row,
+        .col-md-4 {
+            height: auto;
+        }
+        img {
+            height: auto;
+        }
+    }
 
     .img-historia .col-lg-4{
         margin-bottom: 20px;

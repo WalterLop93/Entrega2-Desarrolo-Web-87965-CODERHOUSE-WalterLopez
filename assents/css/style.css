@@ -210,7 +210,7 @@ header {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
 }
 .enunciado .enun .beneficio-text {
@@ -383,6 +383,21 @@ header {
   }
 }
 /* estilo de card */
+.card-producto {
+  height: 260px;
+}
+.card-producto .row {
+  height: 100%;
+}
+.card-producto .col-md-4 {
+  height: 100%;
+}
+.card-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .btn-whatsapp {
   position: fixed;
   background-color: rgb(223, 159, 183);
@@ -599,6 +614,16 @@ footer a:hover {
     grid-template-rows: none;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+  .card-producto {
+    height: auto;
+  }
+  .card-producto .row,
+  .card-producto .col-md-4 {
+    height: auto;
+  }
+  .card-producto img {
+    height: auto;
   }
   .img-historia .col-lg-4 {
     margin-bottom: 20px;
