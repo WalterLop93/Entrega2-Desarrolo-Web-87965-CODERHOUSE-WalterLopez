@@ -9,6 +9,7 @@
     margin-top: 30px;
     color:map.get(mapa.$colores, fuerte);
 }
+
 .produc-mesadulce {
     @include mixin.grid(auto,3,20px);
     margin: 20px 0px 30px;
@@ -29,11 +30,24 @@
         }
         details[open] summary {
             margin-bottom: 12px;
+            animation: expand .25s ease-out;
         }
         ul {
             margin-left: 20px;
         }
+    }
+
+@keyframes expand {
+    from { 
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
 }
+
 
 
 
@@ -59,3 +73,13 @@
     }
 }
 
+
+/* animacion boton whatsapp*/
+.btn-whatsapp {
+    animation: pulseButton 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseButton {
+    0%, 100% { transform: scale(1); }
+    40%      { transform: scale(1.2); }
+}

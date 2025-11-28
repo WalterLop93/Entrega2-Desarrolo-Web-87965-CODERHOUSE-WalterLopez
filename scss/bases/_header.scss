@@ -18,20 +18,21 @@ header {
 /*nav-bar */
 .navbar-nav {
     @include mixin.flex(row,center,center,20px);
-    margin: 20px 0px;    
+    margin: 20px 0px;
 a {
     color:map.get(mapa.$colores, fuerte) !important;
     text-transform: uppercase;
-
     @include mixin.tamaño-title(large,600);
     text-decoration: none;
     padding: 8px 0px;
+    transition: background-color 1.2s ease, color 1.2s ease, padding 1.2s ease;
     &:hover {
         background-color: map.get(mapa.$colores, fuerte);
         color: map.get(mapa.$colores, blanco) !important;
         border-radius: 10px;
         text-decoration: none;
-        transition: 0.3s ease;
+        padding: 8px 12px;
+        transform: translateY(-5px);
         }
 }
     ul{

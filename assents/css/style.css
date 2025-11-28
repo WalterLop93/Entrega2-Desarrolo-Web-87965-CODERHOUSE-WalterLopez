@@ -94,13 +94,15 @@ header {
   font-weight: 600;
   text-decoration: none;
   padding: 8px 0px;
+  transition: background-color 1.2s ease, color 1.2s ease, padding 1.2s ease;
 }
 .navbar-nav a:hover {
   background-color: rgb(190, 100, 140);
   color: rgb(255, 255, 255) !important;
   border-radius: 10px;
   text-decoration: none;
-  transition: 0.3s ease;
+  padding: 8px 12px;
+  transform: translateY(-5px);
 }
 .navbar-nav ul {
   display: flex;
@@ -149,8 +151,21 @@ header {
 .titleindex {
   margin-top: 20px;
   color: rgb(190, 100, 140);
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeSlide 1.2s ease-out forwards;
 }
 
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*index enunciados*/
 .enunciado {
   margin-top: 15px;
@@ -175,15 +190,26 @@ header {
 .enunciado .enun img {
   width: 45px;
   padding: 10px;
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 12px;
 }
 .enunciado .enun h3 {
   color: rgb(190, 100, 140);
   margin-top: 10px;
+  display: inline-block;
+  animation: scaleSutil 5s ease-in-out infinite;
+}
+@keyframes scaleSutil {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
 }
 .enunciado .enun .beneficio-text {
   font-size: 1rem;
+  font-weight: 500;
   max-width: 250px;
   margin: 0 auto;
 }
@@ -214,6 +240,15 @@ header {
   font-weight: 400;
   color: rgb(190, 100, 140);
   margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
 /* imagen mesa dulce*/
@@ -325,11 +360,22 @@ header {
 }
 .produc-mesadulce details[open] summary {
   margin-bottom: 12px;
+  animation: expand 0.25s ease-out;
 }
 .produc-mesadulce ul {
   margin-left: 20px;
 }
 
+@keyframes expand {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
 /* estilo de card */
 .btn-whatsapp {
   position: fixed;
@@ -347,6 +393,19 @@ header {
   border-radius: 50%;
 }
 
+/* animacion boton whatsapp*/
+.btn-whatsapp {
+  animation: pulseButton 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+}
 /* como comprar*/
 .iconoscompra {
   display: flex;
@@ -355,6 +414,37 @@ header {
   margin: 20px 0;
 }
 
+.iconos-compra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.iconos-compra img {
+  width: 120px;
+  height: auto;
+  animation: grow 2.5s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+.iconos-compra img:nth-child(1) {
+  animation-delay: 0s;
+}
+.iconos-compra img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.iconos-compra img:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes grow {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
 .grid-compra {
   display: grid;
   grid-template-rows: auto;
@@ -367,6 +457,15 @@ header {
 .card-ccomprar .card-body {
   padding: 15px;
 }
+.card-ccomprar .numero {
+  transform: translateX(-50%);
+  transition: transform 0.4s ease;
+}
+
+.card-ccomprar:hover .numero {
+  transform: translateX(-50%) translateY(-10px);
+}
+
 /* ubicacion maps*/
 .ubicacion {
   background-color: rgb(245, 220, 230);
@@ -400,6 +499,18 @@ header {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.galeria img {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border-radius: 12px;
+}
+
+.galeria img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  transform: scale(1.1);
+  border: 2px solid rgb(190, 100, 140);
 }
 
 /* footer*/

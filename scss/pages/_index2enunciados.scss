@@ -1,6 +1,7 @@
 @use 'sass:map';
 @use '../utilities/maps' as mapa;
 @use '../utilities/mixin';
+@use '../utilities/extend';
 
 /*index enunciados*/
 .enunciado {
@@ -21,17 +22,29 @@
     img {
         width: 45px;
         padding: 10px;
-        background: white;
+        background:map.get(mapa.$colores, blanco);
         border-radius: 12px;
     }
 
     h3 {
         color:map.get(mapa.$colores, fuerte);
         margin-top: 10px;
+        display: inline-block; // necesario para scale
+        animation: scaleSutil 5s ease-in-out infinite;
+
+        @keyframes scaleSutil {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.03); // sutil y elegante
+        }
+        }
     }
 
+
     .beneficio-text {
-        font-size: 1rem;
+        @include mixin.tamaño-title(1rem,500);
         max-width: 250px;
         margin: 0 auto;
     }

@@ -16,3 +16,15 @@
     }
 }
 
+.galeria img {
+    transition: transform .35s ease, box-shadow .35s ease;
+    border-radius: 12px;
+}
+
+.galeria img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
+    transform: scale(1.1);
+    border: 2px solid map.get(mapa.$colores, fuerte);
+}
+

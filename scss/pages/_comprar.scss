@@ -11,6 +11,40 @@
     margin: 20px 0;
 }
 
+.iconos-compra {
+    @include mixin.flex(row,center,center,50px);
+
+    img {
+        width: 120px;
+        height: auto;
+        animation: grow 2.5s ease-in-out infinite;
+        transition: transform .2s ease;
+    }
+
+    img:nth-child(1) {
+        animation-delay: 0s;
+    }
+    img:nth-child(2) {
+        animation-delay: .4s;
+    }
+    img:nth-child(3) {
+        animation-delay: .8s;
+    }
+}
+
+
+@keyframes grow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+
+
 .grid-compra {
     @include mixin.grid(auto,3,20px);
     margin: 20px 0;
@@ -29,6 +63,15 @@
     @extend .numerocard-centrado;
     }
 }
+
+.card-ccomprar .numero {
+    transform: translateX(-50%);
+    transition: transform .4s ease;
+}
+.card-ccomprar:hover .numero {
+    transform: translateX(-50%) translateY(-10px);
+}
+
 
 /* ubicacion maps*/
 .ubicacion {
