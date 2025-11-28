@@ -1,0 +1,50 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
+
+/*index enunciados*/
+.enunciado {
+    margin-top: 15px;
+
+    .grid-enunciados {
+        background-color:map.get(mapa.$colores, claro);
+        border-radius: 25px;
+        padding: 40px 50px;
+
+        @include mixin.grid(250px,3,20px);
+        text-align: center;
+    }
+
+    .enun {
+        @include mixin.flex(column, center, center, 15px);
+
+    img {
+        width: 45px;
+        padding: 10px;
+        background: white;
+        border-radius: 12px;
+    }
+
+    h3 {
+        color:map.get(mapa.$colores, fuerte);
+        margin-top: 10px;
+    }
+
+    .beneficio-text {
+        font-size: 1rem;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    }
+}
+
+.whatsap-enun {
+    @include mixin.flex(row,center);
+    img{
+        background-color:map.get(mapa.$colores, blanco);
+        margin: -50px;
+        border: 2px solid map.get(mapa.$colores, acento);
+        border-radius: 20px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+
+/* carrusel idex*/
+.carousel-btn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    .btn-productos {
+        background-color:map.get(mapa.$colores, fuerte);
+        color:map.get(mapa.$colores, blanco);
+        padding: 10px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: .3s;
+        font-weight: 500;
+    }
+    .btn-productos:hover {
+            background-color:map.get(mapa.$colores, blanco);
+            border: 3px, solid, map.get(mapa.$colores, fuerte);
+            color:map.get(mapa.$colores, fuerte);
+        }
+}

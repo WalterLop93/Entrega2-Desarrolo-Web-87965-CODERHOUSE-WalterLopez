@@ -1,0 +1,57 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
+
+/* footer*/
+footer {
+    background-color:map.get(mapa.$colores, fuerte);
+    color:map.get(mapa.$colores, blanco);
+
+    a {
+        color:map.get(mapa.$colores, blanco);
+        text-decoration: none;
+
+    &:hover {
+        color:map.get(mapa.$colores, hover);
+        background-color:map.get(mapa.$colores, blanco); 
+    }
+    }
+}
+
+.piedepag {
+    .cajapie {
+        .row {
+            @include mixin.flex(row,30px);
+        }
+    }
+}
+
+.foot {
+    h3 {
+        @include mixin.tamaño-title(1.5rem,700);
+        margin-top: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+    li {
+        margin-bottom: 8px;
+        font-size: 1rem;
+    }
+    }
+}
+
+/* iconos de redes*/
+.redes {
+    @include mixin.flex(row,flex-end,center,15px);
+    img {
+        background-color:map.get(mapa.$colores, blanco);
+        border-radius: 5px;
+        gap: 50px;
+        margin-top: 15px;
+        width: 35px;
+    }
+}
+

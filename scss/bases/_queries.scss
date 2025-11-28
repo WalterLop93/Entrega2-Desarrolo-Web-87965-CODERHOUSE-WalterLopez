@@ -1,0 +1,81 @@
+@use '../utilities/mixin';
+
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        width: 10px;
+    }
+
+    header {
+        .navbar-custom {
+        .navbar-collapse {
+        justify-content: flex-start !important;
+
+            .navbar-nav {
+                ul {
+                margin-top: 10px;
+                width: 100%;
+                @include mixin.flex(column,center,flex-start);
+                padding-left: 0;
+                margin-left: 0;
+                }
+
+                a {
+                text-align: left;          
+                width: 100%;          
+                padding-left: 0;
+                }
+            }
+        }
+        }
+    }
+
+    .enunciado{
+        .grid-enunciados {
+            @include mixin.grid(none,1,20px);
+        }
+    }
+
+
+    .img-historia .col-lg-4{
+        margin-bottom: 20px;
+}
+
+    .redes{
+        align-self: flex-start;
+}
+    .card-index .card{
+        margin-top: 15px;
+    }
+
+    .produc-mesadulce {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-compra {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+}
+    details summary{
+        width: 70%;
+    }
+
+    .produc-mesadulce img {
+        height: 400px;
+}
+
+    .piedepag .col-md-6{
+        margin-bottom: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+}
+
+    .redes {
+        display: flex;
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+}

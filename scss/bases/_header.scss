@@ -1,0 +1,54 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
+@use '../utilities/extend';
+
+/* header */
+header {
+    margin-bottom: 15px;
+    background-color: map.get(mapa.$colores, blanco);
+}
+/* lienea fuerte */
+.linea {
+    background-color:map.get(mapa.$colores, fuerte);
+    @include mixin.flex(row,);
+    height: 5px;
+    color: map.get(mapa.$colores, blanco);
+}
+/*nav-bar */
+.navbar-nav {
+    @include mixin.flex(row,center,center,20px);
+    margin: 20px 0px;    
+a {
+    color:map.get(mapa.$colores, fuerte) !important;
+    text-transform: uppercase;
+
+    @include mixin.tamaño-title(large,600);
+    text-decoration: none;
+    padding: 8px 0px;
+    &:hover {
+        background-color: map.get(mapa.$colores, fuerte);
+        color: map.get(mapa.$colores, blanco) !important;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s ease;
+        }
+}
+    ul{
+        @include mixin.flex(row);
+    }
+        li {
+            list-style: none;         
+        }
+}
+
+/* botón nav-bar */
+.navbar-custom {
+    .navbar-toggler {
+        border-color:map.get(mapa.$colores, fuerte);
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/imagenes/header/icons8-menú-50.png) !important;
+}

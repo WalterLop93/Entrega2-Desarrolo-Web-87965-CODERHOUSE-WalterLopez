@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/extend';
+
+/* card lo que se hace*/
+.recuadro-container{
+    background-color: map.get(mapa.$colores, blanco);
+    border: 3px solid map.get(mapa.$colores, fuerte);
+    padding: 50px 30px 50px;
+    border-radius: 25px;
+    .titulo-cardindex{
+        font-weight: 400;
+        color: map.get(mapa.$colores, fuerte);
+        margin-bottom: 20px;
+    }
+}
+
+.card{
+    @extend .card-base;
+}

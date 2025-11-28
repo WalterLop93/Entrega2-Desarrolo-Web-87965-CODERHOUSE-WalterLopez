@@ -1,0 +1,40 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+
+.card-base {
+    background-color: map.get(mapa.$colores, claro); 
+    border: 1px solid map.get(mapa.$colores, hover);
+    border-radius: 12px;
+    overflow: hidden;
+    .card-title{
+        color: map.get(mapa.$colores, fuerte);
+    }
+}
+
+.numerocard-centrado {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: map.get(mapa.$colores, fuerte);
+    color: map.get(mapa.$colores, blanco);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-compra{
+    position: relative;
+    padding-top: 45px;
+    background-color: map.get(mapa.$colores, blanco);
+    border: 5px solid map.get(mapa.$colores, fuerte);
+    border-radius: 12px;
+    .card-title{
+        color:map.get(mapa.$colores, fuerte);
+        margin-bottom: 5px;
+    }
+}

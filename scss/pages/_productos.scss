@@ -1,0 +1,61 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
+@use '../utilities/extend';
+
+
+/* producto */
+.titulo-mesad{
+    margin-top: 30px;
+    color:map.get(mapa.$colores, fuerte);
+}
+.produc-mesadulce {
+    @include mixin.grid(auto,3,20px);
+    margin: 20px 0px 30px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    details summary {
+        cursor: pointer;
+        font-weight: 600;
+        margin-bottom: 8px;
+        background-color: map.get(mapa.$colores, fuerte);
+        color:map.get(mapa.$colores, blanco);
+        padding: 5px;
+        border-radius: 3px;
+        width: 100%;
+        }
+        details[open] summary {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+}
+
+
+
+
+/* estilo de card */
+.card {
+    @extend .card-base;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    background-color:map.get(mapa.$colores, base); 
+    border-radius: 100%;
+    bottom: 50px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 9999;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+

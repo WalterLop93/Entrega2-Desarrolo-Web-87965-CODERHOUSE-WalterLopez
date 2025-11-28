@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+
+/* general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*{
+    font-family: "Stack Sans Text", sans-serif;
+}
+/* color body*/
+body{
+    background-color:map.get(mapa.$colores, fondo);
+    .h1-pages{
+        background-color:map.get(mapa.$colores, claro);
+        padding: 20px;
+        border-radius: 5px;
+        color: map.get(mapa.$colores, fuerte);
+    }
+}

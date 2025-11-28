@@ -1,0 +1,51 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
+@use '../utilities/extend';
+
+/* como comprar*/
+.iconoscompra {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.grid-compra {
+    @include mixin.grid(auto,3,20px);
+    margin: 20px 0;
+    align-items: stretch;
+}
+
+
+.card-ccomprar {
+    @extend .card-compra;
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .numero {
+    @extend .numerocard-centrado;
+    }
+}
+
+/* ubicacion maps*/
+.ubicacion {
+    background-color: map.get(mapa.$colores, claro);
+    margin: 20px 0;
+    align-content: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    h3 {
+        color: map.get(mapa.$colores, fuerte);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .maps iframe {
+        width: 100%;
+        border: 3px solid map.get(mapa.$colores, base);
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+}

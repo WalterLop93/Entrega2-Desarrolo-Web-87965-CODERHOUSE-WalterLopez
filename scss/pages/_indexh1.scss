@@ -1,0 +1,8 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+
+/* h1 index*/
+.titleindex{
+    margin-top: 20px;
+    color: map.get(mapa.$colores, fuerte);
+}
