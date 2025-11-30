@@ -439,7 +439,7 @@ header {
     transform: scale(1);
   }
   40% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 /* como comprar*/
@@ -704,6 +704,12 @@ footer a:hover {
     justify-content: flex-start !important;
     margin-left: 0 !important;
     width: 100%;
+  }
+  .ubicacion img {
+    position: absolute;
+    right: 20px;
+    width: 70px;
+    height: auto;
   }
 }
 

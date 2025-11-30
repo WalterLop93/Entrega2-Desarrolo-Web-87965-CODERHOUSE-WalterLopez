@@ -102,4 +102,13 @@
         margin-left: 0 !important;
         width: 100%;
     }
+
+    .ubicacion {
+        img{
+            position: absolute;
+            right: 20px;
+            width: 70px;
+            height: auto;
+        }
+    }
 }
