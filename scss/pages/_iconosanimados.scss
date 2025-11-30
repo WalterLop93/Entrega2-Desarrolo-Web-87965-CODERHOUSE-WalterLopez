@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
+@use '../utilities/extend';
+
+.iconosanimado {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        background-color: map.get(mapa.$colores, blanco) ;
+        margin: 15px;
+        border: 1px solid map.get(mapa.$colores, fuerte);
+        border-radius: 100%;
+    }
+}
+
+
+

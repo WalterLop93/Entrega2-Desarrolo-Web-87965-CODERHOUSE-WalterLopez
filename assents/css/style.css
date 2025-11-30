@@ -260,10 +260,22 @@ header {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
+.iconosanimado {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconosanimado img {
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+  border: 1px solid rgb(190, 100, 140);
+  border-radius: 100%;
+}
+
 /* imagen mesa dulce*/
 .mesadulce {
   position: relative;
-  margin: 80px 0px;
+  margin: 40px 0px 80px;
   height: 450px;
   background-image: url(../img/imagenes/index/mesadulce.jpg);
   background-size: cover;
@@ -382,11 +394,10 @@ header {
 }
 .produc-mesadulce .card-producto details .variedadprod {
   color: rgb(190, 100, 140);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
-/* estilo de card */
 .card-producto {
   height: 260px;
 }
@@ -428,7 +439,7 @@ header {
     transform: scale(1);
   }
   40% {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 }
 /* como comprar*/
@@ -503,6 +514,17 @@ header {
   color: rgb(190, 100, 140);
   text-align: center;
   margin-bottom: 15px;
+}
+.ubicacion img {
+  position: absolute;
+  right: 200px;
+  width: 90px;
+  height: auto;
+  border-radius: 100%;
+  border: 5px solid rgb(190, 100, 140);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgb(245, 220, 230);
+  padding: 4px;
 }
 .ubicacion .maps iframe {
   width: 100%;
@@ -631,6 +653,9 @@ footer a:hover {
   }
   .img-historia .col-lg-4 {
     margin-bottom: 20px;
+  }
+  .iconosanimado > :not(:nth-child(1)):not(:nth-child(5)):not(:nth-child(6)) {
+    display: none;
   }
   .iconos-compra img {
     display: flex;

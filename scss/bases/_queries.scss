@@ -51,6 +51,9 @@
         margin-bottom: 20px;
 }
 
+    .iconosanimado > :not(:nth-child(1)):not(:nth-child(5)):not(:nth-child(6)) {
+        display: none;
+    }
 
     .iconos-compra img {
         @include mixin.flex(row,center,center);

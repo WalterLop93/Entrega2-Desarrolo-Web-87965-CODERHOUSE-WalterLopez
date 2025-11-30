@@ -85,6 +85,17 @@
         text-align: center;
         margin-bottom: 15px;
     }
+    img{
+        position: absolute;
+        right: 200px;
+        width: 90px;
+        height: auto;
+        border-radius: 100%;
+        border: 5px solid map.get(mapa.$colores, fuerte);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        background-color:map.get(mapa.$colores, claro);
+        padding: 4px;
+    }
     .maps iframe {
         width: 100%;
         border: 3px solid map.get(mapa.$colores, base);

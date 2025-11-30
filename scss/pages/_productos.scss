@@ -50,7 +50,7 @@
             }
             .variedadprod{
                 color: map.get(mapa.$colores, fuerte);
-                @include mixin.tamaño-title(1rem,400);
+                @include mixin.tamaño-title(0.8rem,400);
             }
         }
     }
@@ -60,7 +60,7 @@
 
 
 
-/* estilo de card */
+
 .card {
     @extend .card-base;
 }
@@ -106,5 +106,5 @@
 
 @keyframes pulseButton {
     0%, 100% { transform: scale(1); }
-    40%      { transform: scale(1.2); }
+    40%      { transform: scale(1.5); }
 }
