@@ -9,18 +9,23 @@
     padding: 50px 30px 50px;
     border-radius: 25px;
     .titulo-cardindex{
-        font-weight: 400;
+        font-weight: 600;
         color: map.get(mapa.$colores, fuerte);
         margin-bottom: 20px;
     }
 }
 
-.card{
+.card {
     @extend .card-base;
+    position: relative;
+    overflow: hidden;
     transition: transform .35s ease, box-shadow .35s ease;
+
 }
 
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 28px rgba(0,0,0,.18);
 }
+
+

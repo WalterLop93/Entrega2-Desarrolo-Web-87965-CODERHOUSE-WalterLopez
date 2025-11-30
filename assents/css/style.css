@@ -24,16 +24,18 @@ body .h1-pages {
 
 .card-base, .card {
   background-color: rgb(245, 220, 230);
-  border: 1px solid rgb(160, 70, 110);
-  border-radius: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
   overflow: hidden;
 }
 .card-base .img, .card .img {
+  position: relative;
   height: 100%;
   object-fit: cover;
 }
 .card-base .card-title, .card .card-title {
   color: rgb(190, 100, 140);
+  z-index: 500;
 }
 
 .numerocard-centrado, .card-ccomprar .numero {
@@ -246,12 +248,14 @@ header {
   border-radius: 25px;
 }
 .recuadro-container .titulo-cardindex {
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(190, 100, 140);
   margin-bottom: 20px;
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -517,7 +521,7 @@ header {
 }
 .ubicacion img {
   position: absolute;
-  right: 200px;
+  right: 80px;
   width: 90px;
   height: auto;
   border-radius: 100%;
