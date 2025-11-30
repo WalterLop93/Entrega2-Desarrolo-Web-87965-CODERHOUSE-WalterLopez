@@ -707,9 +707,8 @@ footer a:hover {
   }
   .ubicacion img {
     position: absolute;
-    right: 20px;
+    right: 10px;
     width: 70px;
-    height: auto;
   }
 }
 
