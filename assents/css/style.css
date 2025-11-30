@@ -616,9 +616,13 @@ footer a:hover {
   width: 35px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navbar-brand {
     width: 10px;
+  }
+  .animate__animated {
+    animation: none !important;
+    transform: none !important;
   }
   header .navbar-custom .navbar-collapse {
     justify-content: flex-start !important;

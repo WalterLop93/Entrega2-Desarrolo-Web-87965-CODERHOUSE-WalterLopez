@@ -1,9 +1,14 @@
 @use '../utilities/mixin';
 
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .navbar-brand {
         width: 10px;
+    }
+
+    .animate__animated{
+        animation: none !important;
+        transform: none !important;
     }
 
     header {
