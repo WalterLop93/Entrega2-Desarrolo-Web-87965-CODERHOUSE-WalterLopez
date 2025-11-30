@@ -27,14 +27,13 @@
         .texto-mesad {
             position: relative;
             z-index: 2;
-            color: #fff;
+            color: map.get(mapa.$colores, blanco);
         }
             .h3 {
                 @include mixin.tamaño-title(2.4rem,700);
-                line-height: 1.2;
             }
-            .h4 {
-                @include mixin.tamaño-title(2rem,300);
+            .h2 {
+                @include mixin.tamaño-title(3.2rem,600);
                 margin-top: 10px;
                 font-family: 'Georgia', serif !important;
             }

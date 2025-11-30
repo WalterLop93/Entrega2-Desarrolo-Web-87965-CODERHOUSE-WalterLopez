@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../assents/css/style.css">
 </head>
 <body>
@@ -43,9 +49,6 @@
             </div>
         </div>
         <div class="linea">
-            <div>
-                p
-            </div>
         </div>
     </header>
 
@@ -54,7 +57,7 @@
             <!--pasos a seguir-->
             <div class="container">
                 <div>
-                    <h1 class="h1-pages">Como Comprar</h1>
+                    <h1 class="h1-pages animate__animated animate__backInRight">Como Comprar</h1>
                         <p class="card-text">Podés elegir entre tortas clásicas o personalizadas, cupcakes, conitos, shots, bombones o mesas dulces completas.<br> También hacemos combos y diseños temáticos para cumpleaños, bodas y eventos especiales.</p>
                 </div>
                 <div class="container">
@@ -65,7 +68,7 @@
                     </div>
                 </div>
                 <!--desarrollo de pasos a seguguir-->
-                <div class="grid-compra">
+                <div class="grid-compra" data-aos="fade-up-left">
                     <div class="card-ccomprar step" >
                         <div class="card-body">
                             <h2 class="numero">1</h2>
@@ -179,5 +182,9 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -46,7 +46,7 @@
 
 
 .grid-compra {
-    @include mixin.grid(auto,3,20px);
+    @include mixin.grid(repeat(2, 1fr),3,30px);
     margin: 40px 0;
     align-items: stretch;
 }

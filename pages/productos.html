@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../assents/css/style.css">
 </head>
 <body>
@@ -44,9 +50,6 @@
             </div>
         </div>
         <div class="linea">
-            <div>
-                p
-            </div>
         </div>
     </header>
 
@@ -54,7 +57,7 @@
         <!--grid de productos-->
         <section>
             <div class="container">
-                <h1 class="h1-pages">Productos</h1> <!--titulo-->
+                <h1 class="h1-pages animate__animated animate__backInRight">Productos</h1> <!--titulo-->
             </div>
             <div class="container">
                 <h3 class="titulo-mesad">Mesa Dulce</h3>
@@ -83,13 +86,9 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Tartas Frutales</h5>
                                 <p class="card-text">Tartas frutales artesanales listas para disfrutar. ¡Frescas, dulces y llenas de color!</p>
-                                <details>
+                                <details class="animate__animated animate__pulse">
                                     <summary>Ver variedades</summary>
-                                        <ul>
-                                            <li>tarta de durazno</li>
-                                            <li>tarta de frutilla</li>
-                                            <li>tarta mix frutal</li>
-                                        </ul>
+                                        <p class="variedadprod">tarta de durazno, tarta de frutilla, tarta mix frutal</p>
                                 </details>
                                 </div>
                             </div>
@@ -107,14 +106,7 @@
                                 <p class="card-text">Tartas especiales llenas de sabor. ¡Cada una más rica que la otra!</p>
                                 <details>
                                     <summary>Ver variedades</summary>
-                                        <ul>
-                                            <li>tarta cabsha</li>
-                                            <li>tarta bon o bon</li>
-                                            <li>tarte de coco</li>
-                                            <li>tarta oreo</li>
-                                            <li>lemon pie</li>
-                                            <li>pasta frola</li>
-                                        </ul>
+                                        <p class="variedadprod">tarta cabsha, tarta bon o bon, tarte de coco, tarta oreo, lemon pie, pasta frola</p>
                                 </details>
                                 </div>
                             </div>
@@ -206,7 +198,7 @@
                     </div> -->
 
                     <!--galletas-->
-                    <div class="card mb-3" >
+                    <div class="card mb-3 card-producto" >
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="../assents/img/imagenes/productos/fotop9.jpg" class="img-fluid rounded-start" alt="...">
@@ -289,5 +281,9 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

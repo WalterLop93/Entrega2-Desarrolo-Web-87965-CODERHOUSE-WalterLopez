@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--css-->
     <link rel="stylesheet" href="./assents/css/style.css">
 </head>
 <body>
@@ -18,7 +26,7 @@
                 <div class="col-12" >
                     <nav class="navbar navbar-expand-lg navbar-custom">
                         <div class="container-fluid">
-                            <div>
+                            <div >
                                 <a class="navbar-brand" href="./index.html"><img width="80px" src="./assents/img/imagenes/header/logo.getd-02-02.png" alt=""></a>
                             </div>
                             <div>
@@ -43,9 +51,6 @@
             </div>
         </div>
         <div class="linea">
-            <div>
-                p
-            </div>
         </div>
     </header>
     <main>
@@ -78,7 +83,7 @@
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button"   data-bs-target="#carouselExampleIndicators"           data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"           data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
@@ -95,18 +100,18 @@
             <div class="enunciado container">
                 <div class="grid-enunciados">
                     <div class="enun">
-                        <img src="./assents/img/imagenes/iconos/whatsapp.png" alt="">
+                        <img data-aos="fade-down" src="./assents/img/imagenes/iconos/whatsapp.png" alt="">
                         <h3>Te Asesoramos</h3>
                         <p class="beneficio-text">Te ayudamos a armar la mejor opción para tu evento.</p>
                     </div>
                     <div class="enun">
-                        <img src="./assents/img/imagenes/iconos/icons8-ordenanza-48.png" alt="">
+                        <img data-aos="fade-down" src="./assents/img/imagenes/iconos/icons8-ordenanza-48.png" alt="">
                         <h3>Encargos Personalizados</h3>
                         <p class="beneficio-text">Diseñamos tus tortas y mesas dulces a tu gusto.</p>
                     </div>
                     <div class="enun">
-                        <img src="./assents/img/imagenes/iconos/icons8-camión-50.png" alt="">
-                        <h3>Consulta Por Envios</h3>
+                        <img data-aos="fade-down" src="./assents/img/imagenes/iconos/icons8-camión-50.png" alt="">
+                        <h3>Consulta Envios</h3>
                         <p class="beneficio-text">Coordinamos retiro o entrega según la zona.</p>
                     </div>
                 </div>
@@ -122,7 +127,7 @@
         <section>
             <div class="container">
                 <div class="recuadro-container">
-                    <h3 class="titulo-cardindex">Lo que hacemos</h3>
+                    <h3 class="titulo-cardindex" data-aos="fade-right">Lo que hacemos</h3>
                     <div class="card-index">
                             <div class="row">
                                 <!--card mesa dulce-->
@@ -136,7 +141,7 @@
                                 </div>
                                 <!--card torta tradicional-->
                                 <div class="col-12 col-lg-4">
-                                    <div class="card" >
+                                    <div class="card animate__animated animate__flash" >
                                         <img src="./assents/img/imagenes/index/Sin título-1-06.jpg" class="card-img-top" width="100%" alt="100%">
                                         <div class="card-body">
                                             <h5 class="card-title">Tortas Tradicionales</h5>
@@ -165,8 +170,8 @@
                         <div class="mesadulce">
                             <div class="overlay"></div>
                             <div class="texto-mesad">
-                            <h3>Mesas dulces personalizadas<br>a tu gusto...</h3>
-                            <h4>gracias por confiar</h4>
+                                <h3>Tus momentos dulces personalizados a tu gusto...</h3>
+                                <h2 data-aos="fade-up-left">gracias por confiar</h2>
                             </div>
                         </div>
                     </div>
@@ -230,5 +235,9 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

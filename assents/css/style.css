@@ -61,7 +61,7 @@ body .h1-pages {
 }
 .card-compra .card-title, .card-ccomprar .card-title {
   color: rgb(190, 100, 140);
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 /* header */
@@ -200,10 +200,13 @@ header {
   border-radius: 12px;
 }
 .enunciado .enun h3 {
+  max-width: 200px;
+  text-align: center;
+  align-content: center;
   color: rgb(190, 100, 140);
   margin-top: 10px;
   display: inline-block;
-  animation: scaleSutil 5s ease-in-out infinite;
+  animation: scaleSutil 3s ease-in-out infinite;
 }
 @keyframes scaleSutil {
   0%, 100% {
@@ -286,16 +289,15 @@ header {
 .mesadulce .texto-mesad {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 .mesadulce .h3 {
   font-size: 2.4rem;
   font-weight: 700;
-  line-height: 1.2;
 }
-.mesadulce .h4 {
-  font-size: 2rem;
-  font-weight: 300;
+.mesadulce .h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
   margin-top: 10px;
   font-family: "Georgia", serif !important;
 }
@@ -347,41 +349,43 @@ header {
   grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: 20px 0px 30px;
+  margin: 20px 0 30px;
 }
 .produc-mesadulce img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.produc-mesadulce details summary {
+.produc-mesadulce .card-producto .card-body {
+  position: relative;
+  overflow: visible;
+}
+.produc-mesadulce .card-producto details {
+  margin-top: 8px;
+  position: relative;
+}
+.produc-mesadulce .card-producto details summary {
   cursor: pointer;
   font-weight: 600;
-  margin-bottom: 8px;
   background-color: rgb(190, 100, 140);
   color: rgb(255, 255, 255);
   padding: 5px;
   border-radius: 3px;
   width: 100%;
+  list-style: none;
 }
-.produc-mesadulce details[open] summary {
-  margin-bottom: 12px;
-  animation: expand 0.25s ease-out;
+.produc-mesadulce .card-producto details summary::-webkit-details-marker {
+  display: none;
 }
-.produc-mesadulce ul {
-  margin-left: 20px;
+.produc-mesadulce .card-producto details summary::-webkit-details-marker[open] summary {
+  margin-bottom: 0;
+}
+.produc-mesadulce .card-producto details .variedadprod {
+  color: rgb(190, 100, 140);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-@keyframes expand {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
 /* estilo de card */
 .card-producto {
   height: 260px;
@@ -468,9 +472,9 @@ header {
 }
 .grid-compra {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
   margin: 40px 0;
   align-items: stretch;
 }
@@ -634,7 +638,7 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     gap: 0;
-    width: 80px;
+    width: 70px;
     animation: movil 3.5s ease-in-out infinite;
   }
   @keyframes movil {

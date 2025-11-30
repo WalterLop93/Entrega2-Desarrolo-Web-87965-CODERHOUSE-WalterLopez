@@ -11,43 +11,41 @@
         background-color:map.get(mapa.$colores, claro);
         border-radius: 25px;
         padding: 40px 50px;
-
         @include mixin.grid(250px,3,20px);
         text-align: center;
     }
 
     .enun {
         @include mixin.flex(column, center, center, 15px);
-
-    img {
-        width: 45px;
-        padding: 10px;
-        background:map.get(mapa.$colores, blanco);
-        border-radius: 12px;
-    }
-
-    h3 {
-        color:map.get(mapa.$colores, fuerte);
-        margin-top: 10px;
-        display: inline-block; // necesario para scale
-        animation: scaleSutil 5s ease-in-out infinite;
-
-        @keyframes scaleSutil {
-        0%, 100% {
-            transform: scale(1);
+        img {
+            width: 45px;
+            padding: 10px;
+            background:map.get(mapa.$colores, blanco);
+            border-radius: 12px;
         }
-        50% {
-            transform: scale(1.05); 
-        }
-        }
-    }
 
-
-    .beneficio-text {
-        @include mixin.tamaño-title(1rem,500);
-        max-width: 250px;
-        margin: 0 auto;
-    }
+        h3 {
+            max-width: 200px;
+            text-align: center;
+            align-content: center;
+            color:map.get(mapa.$colores, fuerte);
+            margin-top: 10px;
+            display: inline-block;
+            animation: scaleSutil 3s ease-in-out infinite;
+            @keyframes scaleSutil {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05); 
+            }
+            }
+        }
+        .beneficio-text {
+            @include mixin.tamaño-title(1rem,500);
+            max-width: 250px;
+            margin: 0 auto;
+        }
     }
 }
 
