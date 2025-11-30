@@ -22,6 +22,14 @@ body .h1-pages {
   color: rgb(190, 100, 140);
 }
 
+body, html {
+  overflow-x: hidden !important;
+}
+
+.seccion-animada {
+  overflow-x: hidden !important;
+}
+
 .card-base, .card {
   background-color: rgb(245, 220, 230);
   border: 1px solid rgb(255, 255, 255);

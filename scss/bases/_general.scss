@@ -21,3 +21,11 @@ body{
         color: map.get(mapa.$colores, fuerte);
     }
 }
+
+body, html {
+    overflow-x: hidden !important;
+}
+
+.seccion-animada{
+    overflow-x: hidden !important;
+}
