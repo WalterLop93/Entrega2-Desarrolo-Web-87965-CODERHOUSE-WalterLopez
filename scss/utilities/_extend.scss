@@ -1,5 +1,6 @@
 @use 'sass:map';
 @use '../utilities/maps' as mapa;
+@use '../utilities/mixin';
 
 .card-base {
     background-color: map.get(mapa.$colores, claro);
@@ -13,6 +14,7 @@
     }
     .card-title {
         color: map.get(mapa.$colores, fuerte);
+        @include mixin.tamaño-title(1.3rem,700);
         z-index: 500;
     }
 }
@@ -42,6 +44,7 @@
     border-radius: 12px;
     .card-title{
         color:map.get(mapa.$colores, fuerte);
+        @include mixin.tamaño-title(1.3rem,700);
         margin-bottom: 4px;
     }
 }
