@@ -32,7 +32,6 @@
     }
 }
 
-
 @keyframes grow {
     0%, 100% {
         transform: scale(1);
@@ -41,9 +40,6 @@
         transform: scale(1.15);
     }
 }
-
-
-
 
 .grid-compra {
     @include mixin.grid(repeat(2, 1fr),3,30px);
