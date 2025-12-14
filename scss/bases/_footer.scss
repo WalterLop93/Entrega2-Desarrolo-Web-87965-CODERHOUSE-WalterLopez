@@ -27,7 +27,7 @@ footer {
 }
 
 .foot {
-    h3 {
+    .title-footer {
         @include mixin.tamaño-title(1.5rem,700);
         margin-top: 15px;
     }

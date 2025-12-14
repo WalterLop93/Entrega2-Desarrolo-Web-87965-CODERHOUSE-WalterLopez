@@ -29,9 +29,6 @@
             z-index: 2;
             color: map.get(mapa.$colores, blanco);
         }
-            .h3 {
-                @include mixin.tamaño-title(2.4rem,700);
-            }
             .h4 {
                 @include mixin.tamaño-title(3.2rem,600);
                 margin-top: 10px;
